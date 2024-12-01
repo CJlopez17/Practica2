@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gps">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localizacion GPS"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/coordenadas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <TextView
+        android:id="@+id/coordenadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coordenadas"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/CalcBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/CalcBt"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="160dp"
+        android:background="#004270"
+        android:backgroundTint="#004270"
+        android:foregroundTint="#004270"
+        android:text="CAlCULAR"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#004270"
+        app:iconTint="#004270"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coordenadas" />
+
+    <Button
+        android:id="@+id/BackBt"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:background="#004270"
+        android:backgroundTint="#004270"
+        android:foregroundTint="#004270"
+        android:text="REGRESAR"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#004270"
+        app:iconTint="#004270"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CalcBt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
